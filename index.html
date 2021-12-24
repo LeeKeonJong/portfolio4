@@ -46,14 +46,14 @@
             </div>
             <div id="section2_slidebox">
                 <ul id="section2_slide">
-                    <li><a href="#"><img src="img/section2_slide1.jpg" alt="img"></a></li>
-                    <li><a href="#"><img src="img/section2_slide2.jpg" alt="img"></a></li>
-                    <li><a href="#"><img src="img/section2_slide3.jpg" alt="img"></a></li>
-                    <li><a href="#"><img src="img/section2_slide4.jpg" alt="img"></a></li>
-                    <li><a href="#"><img src="img/section2_slide5.jpg" alt="img"></a></li>
+                    <li class="img1"><a href="#"><img src="img/section2_slide1.jpg" alt="img"></a></li>
+                    <li class="img2"><a href="#"><img src="img/section2_slide2.jpg" alt="img"></a></li>
+                    <li class="img3"><a href="#"><img src="img/section2_slide3.jpg" alt="img"></a></li>
+                    <li class="img4"><a href="#"><img src="img/section2_slide4.jpg" alt="img"></a></li>
+                    <li class="img5"><a href="#"><img src="img/section2_slide5.jpg" alt="img"></a></li>
                 </ul>
                 <div id="dots">
-                    <span class="dot dot1"></span>
+                    <span class="dot dot1 active"></span>
                     <span class="dot dot2"></span>
                     <span class="dot dot3"></span>
                     <span class="dot dot4"></span>
@@ -65,13 +65,46 @@
         </div>
 
         <script>
-            function slide(){
-                $('#section2_slide').stop().animate({marginLeft:-400},function(){
+
+
+            function slide() {
+                $('#section2_slide').stop().animate({ marginLeft: -400 }, function () {
                     $('#section2_slide li:first').appendTo('#section2_slide');
-                    $('#section2_slide').css({marginLeft:0});
+                    $('#section2_slide').css({ marginLeft: 0 });
+                
+
+                    if ($('#section2_slide li:first').hasClass('img1') === true) {
+                        $('.dot1').addClass('active');
+                        $('.dot5').removeClass('active');
+                    }
+
+                    if ($('#section2_slide li:first').hasClass('img2') === true) {
+                        $('.dot2').addClass('active');
+                        $('.dot1').removeClass('active');
+                    }
+
+                    if ($('#section2_slide li:first').hasClass('img3') === true) {
+                        $('.dot3').addClass('active');
+                        $('.dot2').removeClass('active');
+    
+                    }
+
+                    if ($('#section2_slide li:first').hasClass('img4') === true) {
+                        $('.dot4').addClass('active');
+                        $('.dot3').removeClass('active');
+                    }
+
+                    if ($('#section2_slide li:first').hasClass('img5') === true) {
+                        $('.dot5').addClass('active'); 
+                        $('.dot4').removeClass('active');
+                    }
+
                 });
+
             }
             setInterval(slide,3000);
+
+
         </script>
 
 
