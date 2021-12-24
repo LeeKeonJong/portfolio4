@@ -17,8 +17,8 @@
 <body>
     <div id="wrap">
 		<div class='quickbtn'><ul></ul></div>
-		<div class="fullsection section1" pageNum="1">
-            <video src="video/section1.mp4" autoplay muted loop></video>
+		<div class="fullsection section1" pageNum="1" style="background:url("video);">
+           <div id="section1_videobox"><video src="video/section1.mp4" autoplay muted loop></video></div>
             <header>
                 <div class="logo_box"><a href="#"><img src="img/pngegg.png" alt="img"></a></div>
                 <nav>
@@ -37,7 +37,44 @@
 
 
 
-		<div class="fullsection section2" pageNum="2"><span>2 PAGE</span></div>
+		<div class="fullsection section2" pageNum="2">
+            <div id="real_section2">
+            <div id="section2_text">
+               <div id="section2_title"><h1>MOVIES</h1></div>
+                <p>Journey into the cosmic depths of the mighty Marvel Cinematic Universe!</p>
+                <button type="button">View more</button>
+            </div>
+            <div id="section2_slidebox">
+                <ul id="section2_slide">
+                    <li><a href="#"><img src="img/section2_slide1.jpg" alt="img"></a></li>
+                    <li><a href="#"><img src="img/section2_slide2.jpg" alt="img"></a></li>
+                    <li><a href="#"><img src="img/section2_slide3.jpg" alt="img"></a></li>
+                    <li><a href="#"><img src="img/section2_slide4.jpg" alt="img"></a></li>
+                    <li><a href="#"><img src="img/section2_slide5.jpg" alt="img"></a></li>
+                </ul>
+                <div id="dots">
+                    <span class="dot dot1"></span>
+                    <span class="dot dot2"></span>
+                    <span class="dot dot3"></span>
+                    <span class="dot dot4"></span>
+                    <span class="dot dot5"></span>
+                    </div>
+            </div>
+            </div>
+
+        </div>
+
+        <script>
+            function slide(){
+                $('#section2_slide').stop().animate({marginLeft:-400},function(){
+                    $('#section2_slide li:first').appendTo('#section2_slide');
+                    $('#section2_slide').css({marginLeft:0});
+                });
+            }
+            setInterval(slide,3000);
+        </script>
+
+
 		<div class="fullsection section3" pageNum="3"><span>3 PAGE</span></div>
 		<div class="fullsection section4" pageNum="4"><span>4 PAGE</span></div>
 		<div class="fullsection section5" pageNum="5"><span>5 PAGE</span></div>
