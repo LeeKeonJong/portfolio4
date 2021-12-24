@@ -1,22 +1,30 @@
 @charset "UTF-8";
 
-
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 html,body{width:100%; height:100%; margin:0px; padding:0px;}
-*{margin: 0 auto; padding: 0; color: white;}
+*{margin: 0 auto; padding: 0; color: white; font-family: 'SBAggroB';	}
 ul, li{margin:0; padding:0; list-style:none}	
 
 	#wrap{position:relative;top:0px;z-index:9;width:100%;height:100%;}
     #wrap span{display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:4em; font-weight:bold;}
 	.fullsection{width:100%; height:100%; position:relative;}
 
-	.section1{background:red;}
-	header{width: 90%; height: 50px; display: flex; 
-			align-items: center; flex-direction: row; padding-top: 50px; }
-	.logo_box{width: 100px; height: 50px; margin: 0;}		
+	.section1{}
+	header{width: 90%; height: 50px; display: flex; position: absolute;
+			top: 10px; align-items: center; flex-direction: row; padding-top: 50px; }
+	.logo_box{width: 100px; height: 50px; margin-left: 110px;}		
 	header img{width: 100%; height: 100%;}
-	header nav{width: 800px; height: 50px;}
+	header nav{width: 800px; height: 50px; margin-left: -10px;}
 	header nav ul{width: 800px; height: 50px; display: flex; justify-content: space-between;
-					flex-direction: row; align-items: center; }		
+					flex-direction: row; align-items: center; }	
+	header nav ul li:hover{text-decoration: underline 3px #d9d9d9; }					
+	header nav ul li a{color:  #d9d9d9; text-decoration: none;}	
+	.section1 #section1_text{font-size: 30px; text-align: center;}	
 
 	.section2{background:orange;}
 	.section3{background:yellow;}
