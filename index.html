@@ -10,6 +10,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="js/section2_slide.js"></script>
     
     
         
@@ -17,7 +18,7 @@
 <body>
     <div id="wrap">
 		<div class='quickbtn'><ul></ul></div>
-		<div class="fullsection section1" pageNum="1" style="background:url("video);">
+		<div class="fullsection section1" pageNum="1" >
            <div id="section1_videobox"><video src="video/section1.mp4" autoplay muted loop></video></div>
             <header>
                 <div class="logo_box"><a href="#"><img src="img/pngegg.png" alt="img"></a></div>
@@ -64,51 +65,25 @@
 
         </div>
 
-        <script>
+              
 
 
-            function slide() {
-                $('#section2_slide').stop().animate({ marginLeft: -400 }, function () {
-                    $('#section2_slide li:first').appendTo('#section2_slide');
-                    $('#section2_slide').css({ marginLeft: 0 });
-                
+		<div class="fullsection section3" pageNum="3">
+            <div id="section3_text">
+                <p id="left_text">CHARACTERS</p>
+                <p id="right_text">Get hooked on a hearty helping of heroes and villains from the humble House of Ideas!</p>
+            </div>
+            <div id="characters">
+                <div>123</div>
+                <div>123</div>
+                <div>123</div>
+                <div>123</div>
+                <div>123</div>
+                <div>123</div>
+                <div>123</div>
+            </div>
 
-                    if ($('#section2_slide li:first').hasClass('img1') === true) {
-                        $('.dot1').addClass('active');
-                        $('.dot5').removeClass('active');
-                    }
-
-                    if ($('#section2_slide li:first').hasClass('img2') === true) {
-                        $('.dot2').addClass('active');
-                        $('.dot1').removeClass('active');
-                    }
-
-                    if ($('#section2_slide li:first').hasClass('img3') === true) {
-                        $('.dot3').addClass('active');
-                        $('.dot2').removeClass('active');
-    
-                    }
-
-                    if ($('#section2_slide li:first').hasClass('img4') === true) {
-                        $('.dot4').addClass('active');
-                        $('.dot3').removeClass('active');
-                    }
-
-                    if ($('#section2_slide li:first').hasClass('img5') === true) {
-                        $('.dot5').addClass('active'); 
-                        $('.dot4').removeClass('active');
-                    }
-
-                });
-
-            }
-            setInterval(slide,3000);
-
-
-        </script>
-
-
-		<div class="fullsection section3" pageNum="3"><span>3 PAGE</span></div>
+        </div>
 		<div class="fullsection section4" pageNum="4"><span>4 PAGE</span></div>
 		<div class="fullsection section5" pageNum="5"><span>5 PAGE</span></div>
 	</div>
