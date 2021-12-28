@@ -76,7 +76,7 @@ ul, li{margin:0; padding:0; list-style:none}
 	.spider{position: absolute; top:75%; left: 1645px;}
 
 
-	.section4{background-image: url("img/background.jpg");}
+	.section4{background-repeat: no-repeat; background-size: cover;}
 	.section5{background:blue;}
 	
 	
