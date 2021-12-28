@@ -52,19 +52,31 @@ ul, li{margin:0; padding:0; list-style:none}
 	.scail{transform:scale(0.6) ; opacity: 0.5; transition: 0.2s ease-in-out;}	
 	
 
-	.section3{background:black; display: flex; flex-direction: column; justify-content: space-between;}
+	.section3{background:black; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;}
 	#section3_text{width: 85%; height: auto; display: flex; justify-content: space-between; flex-direction: row;
 					align-items: center;  margin-top: 150px;}
 	#left_text{width: 900px; height: 100px; font-size: 25px; }
 	#right_text{width: 500px; height: 100px; text-align: right; }
 	#characters{width: 100%; height: 600px; display: flex; flex-direction: row;
 				justify-content: space-evenly;}
-	#characters div{width: 278px; height: 600px; cursor: pointer;}
-	#characters div img{width: 100%; height: 100%;}
-	#characters div:hover{transform: scale(1.1); transition: 0.2s ease-in-out;}
-	
+	#characters .character_box{width: 278px; height: 600px; cursor: pointer; }
+	#characters .character_box img{width: 100%; height: 100%; opacity: 0.7;}
+	#characters .character_box img:hover{transform: scale(1.1); opacity: 1;   transition: 0.2s ease-in-out;}
+	.section3_absolutebox{width: 250px; height: 100px; display: flex; flex-direction: column;
+					 justify-content: space-around; text-align: center;}
+	.section3_absolutebox p{font-size: 20px; }
+	.section3_absolutebox button{width: 110px; height: 40px; border: 1px solid white; 
+								background-color: unset; border-radius: 50px; font-size: 12px; cursor: pointer;}
+	.cap{position: absolute; top:75%; left: 10px;}
+	.iron{position: absolute; top:75%; left: 285px;}
+	.thor{position: absolute; top:75%; left: 555px;}
+	.hulk{position: absolute; top:75%; left: 825px;}
+	.black{position: absolute; top:75%; left: 1100px;}
+	.widow{position: absolute; top:75%; left: 1370px;}
+	.spider{position: absolute; top:75%; left: 1645px;}
 
-	.section4{background:green;}
+
+	.section4{background-image: url("img/background.jpg");}
 	.section5{background:blue;}
 	
 	
