@@ -54,7 +54,7 @@ ul, li{margin:0; padding:0; list-style:none}
 	#dots{margin-left: 20px; width: 150px; height: 50px; display: flex; flex-direction: row; 
 			justify-content: space-evenly; align-items: center;}
 	.dot{width: 10px; height: 10px; border: none; border-radius: 50%; background-color: gray;}	
-	.active {border: 2px solid white; transition: 0.2s ease-in-out; transform: scale(1.4); background-color: unset;} 	
+	.active {border: 2px solid white; transition: 0.2s ease-in-out; transform: scale(1.1); background-color: unset;} 	
 	.scail{transform:scale(0.6) ; opacity: 0.5; transition: 0.2s ease-in-out;}	
 	
 
@@ -119,16 +119,18 @@ ul, li{margin:0; padding:0; list-style:none}
 								border: 1px solid #d9d9d9; font-size: 14px; margin-left: 0; }	
 	.section5_absolutebox div span{color: #d9d9d9;}							
 	.section5_absolutebox p{font-weight: bold; font-size: 18px; margin-left: 0;}
-	#section5_textbox2{width: 120px; height: 40px; display: flex; flex-direction: row; align-items: center;}	
-	#section5_textbox2 span{font-weight: bold; font-size: 14px; cursor: pointer;}
-	#section5_textbox2 #radius{width: 25px; height: 25px; text-align: center; display: flex;
-								align-items: center; border: 1px solid white; border-radius: 50%;
-								 cursor: pointer;}	
-	#section5_textbox2 #radius span{font-weight: bold; font-size: 19px; margin-top: -3px;}
-	#section5_textbox2 #radius2{width: 25px; height: 25px; text-align: center; display: flex;
-		align-items: center; border: 1px solid white; border-radius: 50%;
-		 cursor: pointer; display: none;  }	
-    #section5_textbox2 #radius2 span{font-weight: bold; font-size: 19px; margin-top: -3px;}	
+	
+	#section5_morebox{width: 130px; height: 40px; display: flex; flex-direction: row;
+						align-items: center; }
+	#section5_textbox2{width: 100px; height: 20px; cursor: pointer; }
+	#section5_textbox2 p{font-weight: bold;}
+	#arrow_box{width: 30px; height: 25px; display: flex; flex-direction: row-reverse;}
+	#radius_box{width: 25px; height: 25px; border: 1px solid white; border-radius: 50%;
+		text-align: center; display: flex; align-items: center;}
+	#radius_box span{margin-top: -3px;}	
+	#arrow{width: 25px; height: 25px; text-align: center; display: flex; align-items: center;
+			margin-top: -3px; display: none; }		
+	#arrow_box span{font-size: 19px; font-weight: bold;}					
 
 	.quickbtn {position:fixed;right:20px;top:50%;transform:translateY(-50%); z-index:100000}
 	.quickbtn li {width:20px;height:20px;margin-bottom:10px; border-radius:15px;border:2px solid #fff;cursor:pointer;}
