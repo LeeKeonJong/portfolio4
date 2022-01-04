@@ -11,12 +11,12 @@ $(function(){
             $("#wrap > .quickbtn > ul").append("<li></li>");
         }
         $("#wrap .quickbtn ul :first-child").addClass("on");
-        $(window).bind("mousewheel",function(event){
-            var page=$(".quickbtn ul li .on");
-            if($("body").find("#wrap:animated").length >= 1)return false;
+        $(window).bind("mousewheel", function(event){
+            var page = $(".quickbtn ul li.on");
+            if($("body").find("#wrap:animated").length >= 1) return false;
             if(event.originalEvent.wheelDelta >= 0) {
                 var before=page.index();
-                if(page.index() >=0)page.prev().addClass("on").siblings(".on").removeClass("on");
+                if(page.index() >= 0) page.prev().addClass("on").siblings(".on").removeClass("on");
                 var pagelength=0;
                 for(var i=1; i<(before); i++)
                 {
@@ -25,8 +25,6 @@ $(function(){
                 if(page.index() > 0){
                     page=page.index()-1;
                     $("#wrap").animate({"top": -pagelength + "px"},1000, "swing");
-                }else{
-                    alert("첫번째페이지 입니다.");
                 }
             }else{
                 var nextPage=parseInt(page.index()+1);
@@ -41,9 +39,7 @@ $(function(){
                     }
                     $("#wrap").animate({"top":-pagelength + "px"},1000, "swing");
                 }
-                else{
-                    alert("마지막 페이지 입니다.!");
-                };
+                
             }
         });
 
@@ -59,7 +55,7 @@ $(function(){
     }
     function quickbtnClick(){
         $(".quickbtn li").click(function(){
-            var gnbindex =$(this).index()+1;
+            var gnbindex = $(this).index()+1;
             var length=0;
             for(var i=1; i<(gnbindex); i++)
             {
@@ -68,7 +64,7 @@ $(function(){
             if($("body").find("#wrap:animated").length >= 1) return false;
             $(this).addClass("on").siblings("li").removeClass("on");
 
-            $("wrap").animate({"top":-length + "px"},800, swing);
+            $("#wrap").animate({"top": -length + "px"},800, "swing");
             return false;
         });
     }
