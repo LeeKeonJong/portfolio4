@@ -24,7 +24,7 @@ $(function(){
                 }
                 if(page.index() > 0){
                     page=page.index()-1;
-                    $("#wrap").animate({"top": -pagelength + "px"},1000, "swing");
+                    $("#wrap").animate({"top": -pagelength + "px"},600, "swing");
                 }
             }else{
                 var nextPage=parseInt(page.index()+1);
@@ -37,7 +37,7 @@ $(function(){
                     for(var i=1; i<(nextPage+1); i++){
                         pagelength += $(".section"+i).height();
                     }
-                    $("#wrap").animate({"top":-pagelength + "px"},1000, "swing");
+                    $("#wrap").animate({"top":-pagelength + "px"},600, "swing");
                 }
                 
             }
