@@ -43,8 +43,12 @@ $(function(){
                     $('.section5').css("transform","translateY(-220px)").css("transition","0.6s");
                     $('.footer').css("transform","translateY(220px)").css("display","block");
                     
-                }; 
+                };
+                 
             }
+            $(".footer").click(function(){
+                $(".footer").hide();
+            });
         });
 
         $(window).resize(function(){
