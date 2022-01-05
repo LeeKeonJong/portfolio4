@@ -26,6 +26,11 @@ $(function(){
                     page=page.index()-1;
                     $("#wrap").animate({"top": -pagelength + "px"},600, "swing");
                 }
+                if($(".footer")){
+                    
+                    $('.section5').css("transform","translateY(0px)").css("transition","0.6s");
+                    $('.footer').fadeOut(600);
+                }
             }else{
                 var nextPage=parseInt(page.index()+1);
                 var lastPageNum=parseInt($(".quickbtn ul li").size());
@@ -46,9 +51,7 @@ $(function(){
                 };
                  
             }
-            $(".footer").click(function(){
-                $(".footer").hide();
-            });
+            
         });
 
         $(window).resize(function(){
