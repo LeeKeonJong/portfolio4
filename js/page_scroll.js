@@ -40,8 +40,8 @@ $(function(){
                     $("#wrap").animate({"top":-pagelength + "px"},600, "swing");
                 }
                 else{
-                    $('.section5').css("transform","translateY(-220px)");
-                    $('.footer').css("transform","translateY(220px)").show();
+                    $('.section5').css("transform","translateY(-220px)").css("transition","0.6s");
+                    $('.footer').css("transform","translateY(220px)").css("display","block");
                     
                 }; 
             }
