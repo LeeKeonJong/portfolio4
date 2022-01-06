@@ -1,1 +1,16 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{width:100%; height:100%; margin:0px; padding:0px; overflow: hidden;}
+*{margin: 0 auto; padding: 0; color: white; font-family: 'OTWelcomeBA'; box-sizing: border-box;	}
+ul, li{margin:0; padding:0; list-style:none}	
+
+	#wrap{position:relative;top:0px;z-index:9;width:100%;height:100%;}
+    
+	.fullsection{width:100%; height:100%; position:relative; }
