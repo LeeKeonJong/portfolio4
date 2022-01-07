@@ -1,5 +1,7 @@
 $(function(){
 
+	
+
 	$('.dot6').click(function(){
 		$('#section4_hiddenbox').stop().animate({marginLeft:0},1500);
 		$('.dot7').removeClass('active')
