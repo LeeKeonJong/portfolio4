@@ -26,7 +26,7 @@ $(function(){
                     page=page.index()-1;
                     $("#wrap").animate({"top": -pagelength + "px"},600, "swing");
                 }
-                if($(".footer")){
+                if($(".footer").find){
                     
                     $('.section5').css("transform","translateY(0px)").css("transition","0.6s");
                     $('.footer').fadeOut(600);

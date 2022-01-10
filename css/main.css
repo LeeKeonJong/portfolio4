@@ -150,7 +150,7 @@
 	#section4_box{width: 100%; height: 400px; display: flex; flex-direction: column; justify-content: space-evenly;
 				align-items: center; }
 	#section4_textbox{width: 180px; height: 40px; text-align: center; }	
-	#section4_slidebox{width: 85%; height: 300px; overflow: hidden;}
+	#section4_slidebox{width: 840px; height: 300px; overflow: hidden;}
 	#section4_hiddenbox{width: 2800px; display: flex; flex-direction: row; justify-content: space-evenly;
 		align-items: center; }
 	#section4_slide1{width: 1400px; height: 300px; display: flex; flex-direction: row; 
@@ -167,23 +167,23 @@
 
 
 	.section5{background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; }
-	#section5_box{width: 1400px; height: 700px; display: flex; flex-direction: column;
+	#section5_box{width: 92%; height: 700px; display: flex; flex-direction: column;
 					justify-content: space-around; align-items: center; }
 	#section5_textbox{width: 180px; height: 40px; text-align: center;}
-	#section5_newsbox{width: 1400px; height: 450px; display: flex; flex-direction: row;
+	#section5_newsbox{width: 92%; height: 450px; display: flex; flex-direction: row;
 						justify-content: space-evenly; align-items: center; }
-	#section5-1{width: 700px; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
-	#section5-2{width: 300px; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
-	#section5-3{width: 300px; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
-	#section5_imgbox{width: 700px; height: 450px;}
+	#section5-1{width: 50%; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
+	#section5-2{width: 22%; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
+	#section5-3{width: 22%; height: 450px; position: relative; overflow: hidden; border-radius: 10px;}
+	#section5_imgbox{width: 100%; height: 450px;}
 	#section5_imgbox img{width: 100%; height: 100%; cursor: pointer;}
 	#section5_imgbox img:hover{transform: scale(1.1); transition: 0.3s ease-in-out;}
-	.section5_imgbox2{width: 300px; height: 450px;cursor: pointer; }
+	.section5_imgbox2{width: 100%; height: 450px;cursor: pointer; }
 	.section5_imgbox2 img{width: 100%; height: 100%;}
 	.section5_imgbox2 img:hover{transform: scale(1.1); transition: 0.3s ease-in-out;}
-	.section5_absolutebox{width: 260px; height: 100px; display: flex; flex-direction: column;
+	.section5_absolutebox{width: 90%; height: 100px; display: flex; flex-direction: column;
 							justify-content: space-evenly; position: absolute; top: 75%; left: 5%;}
-	.section5_absolutebox1{width: 420px;}
+	.section5_absolutebox1{width: 90%;}
 	.section5_absolutebox div{width: 60px; height: 30px; text-align: center; display: flex; align-items: center; font-weight: bold; 
 								border: 1px solid #d9d9d9; font-size: 14px; margin-left: 0; }	
 	.section5_absolutebox div span{color: #d9d9d9;}							
@@ -203,7 +203,7 @@
 	
 	footer{width: 100%; height: 25%; display: flex; align-items: center; background-color: black;
 	      position: absolute; bottom: 0; display: none; z-index: -1;}
-	#footer_box{width: 1400px; height: 200px; display: flex; align-items: center; 
+	#footer_box{width: 80%; height: 200px; display: flex; align-items: center; 
 				justify-content: space-between; position: relative;}
 	#footer_logo{width: 120px; height: 100px; margin-left: 0; }			
 	.logo_box #logo_opacity{width: 100%; height: 100%; opacity: 0.5;}
