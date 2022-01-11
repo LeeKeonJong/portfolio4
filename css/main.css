@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 
-
 @media (max-width:599px) {}
+@media (min-width:600px) {}
 @media (min-width:1000px) {
 	.section1{width: 100%; height: 100%; display: flex;}
 	#section1_videobox{width: 100%; height: 100%;  overflow: hidden; }
