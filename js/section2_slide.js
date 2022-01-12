@@ -1,12 +1,12 @@
 $(function(){
-
+    
     function slide() {
         $('#section2_slide li:first').addClass('scail');
             $('#section2_slide').stop().animate({marginLeft: -410},function () {
             $('#section2_slide li:first').appendTo('#section2_slide');
             $('#section2_slide').css({ marginLeft: 0 });
             $('#section2_slide li').removeClass('scail');
-            
+              
 
             if ($('#section2_slide li:first').hasClass('img1') === true) {
                 $('.dot1').addClass('active');
@@ -39,5 +39,5 @@ $(function(){
 
     }
     setInterval(slide,3000);
-    
+
 });
