@@ -25,14 +25,16 @@ $("#menu_ham").mouseleave(function(){
        });
    }else if(window.matchMedia("(max-width: 599px)").matches){
 
-      $("#ham").hover(function(){
+      $("#ham").click(function(){
          $("#menu_ham").css("right","0").css("transition","0.6s");
-          
+         $("#ham").fadeOut(100);
+         $("#close").stop().fadeIn(500);
       });
       
-      $("#menu_ham").mouseleave(function(){
+      $("#close").click(function(){
           $("#menu_ham").css("right","-50%").css("transition","0.5s");
-           
+          $("#close").fadeOut(100);
+          $("#ham").stop().fadeIn(500);
        });
    }
 
