@@ -39,8 +39,20 @@ $(function(){
 			
 		});
 		
-	  }
+	  }else if(window.matchMedia("(max-width: 599px)").matches){
+		$('.dot6').click(function(){
+			$('#section4_hiddenbox').stop().animate({marginLeft:0},7000);
+			$('.dot7').removeClass('active')
+			$('.dot6').addClass('active')
+		});	
 	
+		$('.dot7').click(function(){
+			$('#section4_hiddenbox').stop().animate({marginLeft:-2570},10000);
+			$('.dot7').addClass('active')
+			$('.dot6').removeClass('active')
+			
+		});
+	  }
 
 	
 
