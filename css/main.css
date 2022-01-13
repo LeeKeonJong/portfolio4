@@ -233,7 +233,7 @@
 	.social img{width: 100%; height: 100%; opacity: 0.5; cursor: pointer;}
 	.social img:hover{transition: 0.4s ease-in-out; opacity: 0.3;}	
 
-	.quickbtn {position:fixed;right:10%;top:50%;transform:translateY(-50%); z-index: 10; }
+	.quickbtn {position:fixed;right:7%;top:50%;transform:translateY(-50%); z-index: 10; }
 	.quickbtn li {width:10px; height:10px; margin-bottom:10px; border-radius:50%; border:none; background-color: gray; cursor:pointer;}
 	.quickbtn .on {border: 2px solid white; transition: 0.3s ease-in-out; transform: scale(1.5); background-color: unset;}
 }
